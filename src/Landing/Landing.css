@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Teko:wght@300;400&display=swap");
 body {
-  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Teko", sans-serif;
 }
 .container {
   padding-left: 18%;
@@ -150,7 +152,6 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
-
 
 .btn-react {
   display: flex;
