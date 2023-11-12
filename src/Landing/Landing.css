@@ -1,0 +1,370 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+}
+.container {
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.talent {
+  width: 55%;
+  margin-left: 70px;
+}
+.title-hero {
+  font-size: 28px;
+}
+.p-hero {
+  font-weight: lighter;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bg {
+  background-color: #007a3f;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.no-bg {
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.btn-hero {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  gap: 10px;
+}
+.btn-belajar-sekarang {
+  padding: 5px;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  border: 1px solid transparent;
+  background-color: white;
+  border: 2px solid rgb(196, 196, 196);
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+}
+.btn-konsul-gratis {
+  padding: 5px;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  border: 1px solid transparent;
+  background-color: #007a3f;
+  border: 1px solid transparent;
+  font-weight: 600;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+}
+.text-deretan {
+  text-align: center;
+  margin-bottom: -30px;
+}
+.partner {
+  margin-top: 130px;
+}
+.text-partner {
+  margin-top: 100px;
+}
+.img-partner {
+  width: 100%;
+}
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.talent2 {
+  width: 60%;
+  margin-left: 40px;
+}
+.text-benefit {
+  text-align: center;
+}
+.parent-text-kelas {
+  margin-left: 40px;
+}
+
+/* END */
+.end-text {
+  background-color: #007a3f;
+  color: white;
+  text-align: center;
+  margin-top: 170px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+.desk-gabung {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-gabung {
+  background-color: white;
+  color: #007a3f;
+  border: 1px solid transparent;
+  font-size: 20px;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.garis-end {
+  margin-top: 100px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+/* KELAS */
+.kelas {
+  display: flex;
+  margin-top: 200px;
+}
+.img-kelas {
+  width: 50%;
+}
+.desk-kelas {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.parent-all-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.btn-react {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid #999;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.btn-android {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #007a3f;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 3px;
+}
+.btn-ios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #007a3f;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.btn-go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid #999;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 3px;
+}
+.garis {
+  margin-top: 50px;
+  border: 1px solid rgb(221, 221, 221);
+}
+.lihat-kelas {
+  margin-top: 50px;
+  color: #999;
+  cursor: pointer;
+}
+
+/* MENTOR */
+.container-card {
+  margin-top: 100px;
+}
+.parent-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.pro-mentor {
+  text-align: center;
+}
+.card {
+  width: 30%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mentor-1 {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.posision {
+  font-weight: 500;
+}
+.desk-dev {
+  margin-top: 20px;
+}
+.wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  border: 2px solid #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-wa {
+  font-size: 50px;
+}
+
+/* MARQUEE */
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    /* text-align: center; */
+  }
+  .content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .talent {
+    margin-left: 30px;
+    width: 95%;
+  }
+  .btn-belajar-sekarang {
+    width: 100%;
+    padding: 3px;
+  }
+  .btn-konsul-gratis {
+    width: 100%;
+  }
+  .img-partner {
+    width: 250%;
+  }
+  .benefit {
+    display: grid;
+  }
+  .talent2 {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .kelas {
+    display: grid;
+  }
+  .img-kelas {
+    width: 100%;
+  }
+  .parent-card {
+    display: grid;
+    gap: 0;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .parent-text-kelas {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .parent-all-btn {
+    display: grid;
+  }
+  .wa {
+    visibility: hidden;
+  }
+  .text-benefit {
+    margin-bottom: 20px;
+  }
+  .desk-kelas {
+    text-align: justify;
+  }
+  .p-hero {
+    text-align: justify;
+  }
+}
