@@ -1,40 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar2.css";
-import logo from "../asset/APA.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCode, faHome, faListDots, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
-import Swal from "sweetalert2";
+import logoapa from "../asset/APA2.png"
 
-const Navbar2 = () => {
-  const handleBtn = () => {
-    Swal.fire({
-      title: "Halo Pengguna",
-      text: "Fitur Kami Sedang dalam pembangunan...",
-      icon: "warning"
-    });
-  }
-
+export default function App() {
+  const [show, setShow] = useState(true);
   return (
-    <React.Fragment>
-      <div className="parent-nav">
-        <div className="nav-header">
-          <ul className="isi-nav">
-            <li>
-              <img className="logo-header" src={logo} alt="" />
-            </li>
-            <li><span><FontAwesomeIcon className="all-icon-nav" icon={faHome} /></span> Home</li>
-            <li><span><FontAwesomeIcon className="all-icon-nav" icon={faPeopleGroup} /></span> Kelas</li>
-            <li><span><FontAwesomeIcon className="all-icon-nav" icon={faCode} /></span> Program</li>
-            <li><span><FontAwesomeIcon className="all-icon-nav" icon={faListDots} /></span> Lainnya</li>
-            <div className="parent-btn">
-              <button className="btn-masuk" onClick={() => handleBtn()}>Masuk</button>
-              <button className="btn-daftar" onClick={() => handleBtn()}>Daftar</button>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </React.Fragment>
-  );
-};
+    <div className="App">
+      <nav className="navbar-nav">
+        <img className="logo" src={logoapa} alt="" />
+        <ul className="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" className="hamburger">
+            &#9776;
+          </label>
 
-export default Navbar2;
+          <div className="menu">
+            <li>
+              <a href="/">Beranda</a>
+            </li>
+            <li>
+              <a href="/">Tentang</a>
+            </li>
+            <li className="services">
+              <a href="/">Program</a>
+
+              {/* <ul className="dropdown">
+                <li>
+                  <a href="/">Dropdown 1 </a>
+                </li>
+                <li>
+                  <a href="/">Dropdown 2</a>
+                </li>
+                <li>
+                  <a href="/">Dropdown 2</a>
+                </li>
+                <li>
+                  <a href="/">Dropdown 3</a>
+                </li>
+                <li>
+                  <a href="/">Dropdown 4</a>
+                </li>
+              </ul> */}
+            </li>
+            <li>
+              <a href="/">Kelas</a>
+            </li>
+            <li className="li-btn">
+              <button className="btn-masuk">Masuk</button>
+              <button className="btn-daftar">Daftar</button>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  );
+}

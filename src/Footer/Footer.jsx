@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css"
-import logo from "../asset/APA.png"
+import logo from "../asset/APA2.png"
 
 const Footer = () => {
   return (
@@ -29,29 +29,29 @@ const Footer = () => {
               <h2 className="footer-menu-name"> Get Started</h2>
               <ul id="menu-get-started" className="footer-menu-list">
                 <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Start</a>
+                  <a href="#">Office</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Documentation</a>
+                  <a href="#">Langganan</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Installation</a>
+                  <a href="#">Support</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="footer-content-column">
             <div className="footer-menu">
-              <h2 className="footer-menu-name"> Company</h2>
+              <h2 className="footer-menu-name"> Perusahaan</h2>
               <ul id="menu-company" className="footer-menu-list">
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Contact</a>
+                  <a href="#">Kontak</a>
                 </li>
                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                  <a href="#">News</a>
+                  <a href="#">Terbaru</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Careers</a>
+                  <a href="#">Karir</a>
                 </li>
               </ul>
             </div>
@@ -73,35 +73,35 @@ const Footer = () => {
               <ul id="menu-quick-links" className="footer-menu-list">
                 <li className="menu-item menu-item-type-custom menu-item-object-custom">
                   <a target="_blank" rel="noopener noreferrer" href="#">
-                    Support Center
+                    Beranda
                   </a>
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom">
                   <a target="_blank" rel="noopener noreferrer" href="#">
-                    Service Status
+                    Tentang
                   </a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Security</a>
+                  <a href="#">Program</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Blog</a>
+                  <a href="#">Kelas</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                  <a href="#">Customers</a>
+                  <a href="#">Langganan</a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Reviews</a>
+                  <a href="#">Lainnya</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="footer-content-column">
             <div className="footer-call-to-action">
-              <h2 className="footer-call-to-action-title"> Let's Chat</h2>
+              <h2 className="footer-call-to-action-title"> Konsultasi Gratis</h2>
               <p className="footer-call-to-action-description">
                 {" "}
-                Have a support question?
+                Punya Pertanyaan?
               </p>
               <a
                 className="footer-call-to-action-button button"
@@ -109,11 +109,11 @@ const Footer = () => {
                 target="_self"
               >
                 {" "}
-                Get in Touch{" "}
+                Hubungi Kami{" "}
               </a>
             </div>
             <div className="footer-call-to-action">
-              <h2 className="footer-call-to-action-title"> You Call Us</h2>
+              <h2 className="footer-call-to-action-title"> Kontak Umum</h2>
               <p className="footer-call-to-action-link-wrapper">
                 {" "}
                 <a

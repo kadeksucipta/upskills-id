@@ -1,114 +1,168 @@
-.parent-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  font-weight: bolder;
-  font-family: "Quicksand", sans-serif;
+/* UTILITIES */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  box-shadow: rgba(109, 109, 109, 0.35) 0px 5px 5px;
-  width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 50px;
-}
-.isi-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+} */
+a {
+  text-decoration: none;
 }
 li {
   list-style: none;
+  font-weight: 500;
 }
-.logo-header {
-  width: 60px;
+
+/* NAVBAR STYLING STARTS */
+.navbar-nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  padding-left: 15%;
+  padding-right: 15%;
+  box-shadow: rgba(130, 130, 130, 0.24) 0px 3px 8px;
+  z-index: 99;
+}
+.nav-links a {
+  color: #000000;
+}
+/* LOGO */
+.logo {
+  width: 15%;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  align-items: center;
+}
+.menu li:hover {
+  /* background-color: gray;
+  border-radius: 5px;
+  transition: 0.3s ease; */
+}
+.menu li {
+  padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+.dropdown {
+  background-color: #4334;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+.dropdown li:hover {
+  background-color: #4334;
+}
+.services:hover .dropdown {
+  display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+  top: 0;
+  transition: all 2s;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
 }
 .btn-masuk {
-  padding: 10px;
-  font-size: 15px;
-  font-family: "Quicksand", sans-serif;
-  border: 1px solid #007a3f;
   background-color: white;
-  color: #007a3f;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.btn-daftar {
+  border: 1px solid #007a3f;
   padding: 10px;
-  font-size: 15px;
   font-family: "Quicksand", sans-serif;
-  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #007a3f;
+  border-radius: 50px 0 0 50px;
+}
+.btn-daftar {
   background-color: #007a3f;
-  border: 1px solid transparent;
+  border: 1px solid white;
   color: white;
-  font-weight: bold;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin-left: 10px;
   border-radius: 0 50px 50px 0;
-  cursor: pointer;
 }
-.all-icon-nav {
-  visibility: hidden;
-}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    left: 0;
+    top: 4.9rem;
+    text-align: center;
+    padding: 16px 0;
+    height: 100vh;
+    transition: 1s;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    background-color: #007a3f;
+    color: white;
+    border-radius: 3px;
+  }
+  .menu li {
+    margin-top: 12px;
+    width: 100%;
+    padding: 0;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
 
-/* RESPONSIVE */
-/* @media screen and (max-width: 414px) {
-  .nav-header {
-    width: 100%;
-    padding: 0;
+  .hamburger {
+    display: block;
   }
-  .all-icon-nav {
-    visibility: visible;
+  .hamburger:hover {
+    color: rgb(0, 0, 0);
+    transition: color;
+    transition-delay: 200ms;
   }
-  li {
-    visibility: hidden;
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
   }
-  .isi-nav {
-    display: flex;
-    justify-content: center;
-    gap: 2px;
+  .dropdown li:hover {
+    background-color: #433354;
   }
-  .logo-header {
-    visibility: hidden;
-  }
-} */
-@media screen and (max-width: 768px) {
-  .nav-header {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    z-index: 99;
-    border-radius: 30px 30px 0 0;
-  }
-  li {
-    visibility: hidden;
-  }
-  .isi-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    margin-top: 20px;
-  }
-  .logo-header {
-    display: none;
-  }
-  .btn-daftar {
-    display: none;
-  }
-  .btn-masuk {
-    display: none;
-  }
-  .all-icon-nav {
-    width: 100%;
-    font-size: 23px;
-    visibility: visible;
+  .logo {
+    width: 40%;
   }
 }

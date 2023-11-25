@@ -1,0 +1,136 @@
+.navbar {
+  background-color: rgb(0, 149, 218);
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+.nav-menu {
+  background-color: rgb(255, 255, 255) !important;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.nav-text a:hover {
+  background-color: rgb(0, 149, 218);
+}
+.nav-menu-items {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.navbar-toggle {
+  background-color: rgb(0, 149, 218);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.span {
+  margin-left: 16px;
+}
+.icon-bars {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-left: 50px;
+}
+.icon-close {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-left: 35px;
+  color: white;
+}
+.isi-sidebar {
+  color: white;
+  margin-left: 35px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: rgb(0, 149, 218);
+}
+.parent-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 3px;
+}
+.title-sidebar {
+  color: white;
+}
+.parent-isi1,
+.parent-isi2,
+.parent-isi3,
+.parent-isi4,
+.parent-isi5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 100ms;
+}
+.parent-isi1:hover {
+  background: rgb(241, 241, 241);
+  margin-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+.parent-isi2:hover {
+  background: rgb(241, 241, 241);
+  margin-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+.parent-isi3:hover {
+  background: rgb(241, 241, 241);
+  margin-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+.parent-isi4:hover {
+  background: rgb(241, 241, 241);
+  margin-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+.parent-isi5:hover {
+  background: rgb(241, 241, 241);
+  margin-right: 20px;
+  border-radius: 0 10px 10px 0;
+}

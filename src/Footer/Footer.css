@@ -253,9 +253,9 @@
   
   
   @media (max-width: 768px) {
-    .footer {
+    /* .footer {
         display: none;
-    }
+    } */
   }
   
   /* Media Query For different screens */
