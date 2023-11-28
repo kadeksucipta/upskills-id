@@ -1,0 +1,8 @@
+.error-img {
+    text-align: center;
+}
+.parent-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

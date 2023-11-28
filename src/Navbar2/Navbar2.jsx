@@ -1,9 +1,31 @@
 import React, { useState } from "react";
 import "./Navbar2.css";
 import logoapa from "../asset/APA2.png"
+import { useNavigate } from "react-router-dom";
 
 export default function App() {
+
+  const dispatch = useNavigate()
+  const navigate = useNavigate()
+
   const [show, setShow] = useState(true);
+
+  const goToLogin = () => {
+    navigate("/Login");
+  };
+
+  const goToDaftar = () => {
+    navigate("/Daftar");
+  };
+
+  const goToKelas = () => {
+    navigate("/Kelas");
+  };
+  const goToProgram = () => {
+    navigate("/Program");
+  };
+
+
   return (
     <div className="App">
       <nav className="navbar-nav">
@@ -18,11 +40,8 @@ export default function App() {
             <li>
               <a href="/">Beranda</a>
             </li>
-            <li>
-              <a href="/">Tentang</a>
-            </li>
             <li className="services">
-              <a href="/">Program</a>
+              <a className="nav-program" onClick={() => goToProgram()}>Program</a>
 
               {/* <ul className="dropdown">
                 <li>
@@ -43,11 +62,11 @@ export default function App() {
               </ul> */}
             </li>
             <li>
-              <a href="/">Kelas</a>
+              <a className="nav-kelas" onClick={() => goToKelas()}>Kelas</a>
             </li>
             <li className="li-btn">
-              <button className="btn-masuk">Masuk</button>
-              <button className="btn-daftar">Daftar</button>
+              <button className="btn-masuk" onClick={() => goToLogin()}>Masuk</button>
+              <button className="btn-daftar" onClick={() => goToDaftar()}>Daftar</button>
             </li>
           </div>
         </ul>

@@ -7,6 +7,10 @@ import store from './App/store';
 import Landing from './Landing/Landing';
 import { Provider } from 'react-redux';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Login from './Login/Login';
+import Daftar from './Daftar/Daftar';
+import Sidebar from './Sidebar/Sidebar';
+import Program from './Program/Program';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +20,22 @@ const router = createBrowserRouter([
   {
     path: "Landing",
     element: <Landing />
+  },
+  {
+    path: "Login",
+    element: <Login />
+  },
+  {
+    path: "Daftar",
+    element: <Daftar />
+  },
+  {
+    path: "Kelas",
+    element: <Sidebar />
+  },
+  {
+    path: "Program",
+    element: <Program />
   },
 ])
 

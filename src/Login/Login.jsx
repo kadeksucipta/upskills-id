@@ -1,8 +1,17 @@
 import React from "react";
 import apaLogo from "../asset/APA2.png";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const dispatch = useNavigate()
+  const navigate = useNavigate()
+
+  const goToDaftar = () => {
+    navigate("/Daftar");
+  };
+
   return (
     <React.Fragment>
       <div className="container-login">
@@ -46,7 +55,7 @@ const Login = () => {
 
           <div className="punya-akun">
             <p className="sudah-punya-akun">
-              Sudah punya akun?<span className="masuk-akun"> Masuk</span>
+              Belum punya akun?<span className="masuk-akun" onClick={() => goToDaftar()}>Daftar</span>
             </p>
           </div>
           <hr className="hr-bawah" />

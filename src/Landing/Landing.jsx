@@ -30,8 +30,13 @@ import mentor4 from "../asset/mentor-4.png";
 import mentor5 from "../asset/mentor-5.png";
 import mentor6 from "../asset/mentor-6.png";
 import Swal from "sweetalert2";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const handleCard = () => {
     Swal.fire({
@@ -40,6 +45,7 @@ const Landing = () => {
       icon: "success"
     });
   }
+
 
   return (
     <React.Fragment>

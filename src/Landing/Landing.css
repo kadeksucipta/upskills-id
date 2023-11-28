@@ -340,6 +340,9 @@ body {
   .talent {
     margin-left: 0;
   }
+  .container{
+    padding-top: 10%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -421,5 +424,8 @@ body {
   }
   .icon-benefit {
     margin-right: 10px;
+  }
+  .container{
+    padding-top: 10%;
   }
 }

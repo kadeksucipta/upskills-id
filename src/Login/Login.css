@@ -133,6 +133,10 @@ body {
   font-weight: bold;
   font-weight: 500;
   color: #007a3f;
+  cursor: pointer;
+}
+.masuk-akun:hover {
+  text-decoration: underline;
 }
 .hr-bawah {
   border: 1px solid rgb(226, 226, 226);
