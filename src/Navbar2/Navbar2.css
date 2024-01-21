@@ -35,7 +35,7 @@ li {
 }
 /* LOGO */
 .logo {
-  width: 15%;
+  width: 6%;
 }
 /* NAVBAR MENU */
 .menu {
@@ -94,18 +94,18 @@ input[type="checkbox"] {
 }
 .btn-masuk {
   background-color: white;
-  border: 1px solid #007a3f;
+  border: 1px solid #00357a;
   padding: 10px;
   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   font-weight: 500;
   border-radius: 3px;
-  color: #007a3f;
+  color: #00357a;
   border-radius: 50px 0 0 50px;
   cursor: pointer;
 }
 .btn-daftar {
-  background-color: #007a3f;
+  background-color: #00357a;
   border: 1px solid white;
   color: white;
   padding: 10px;
@@ -148,7 +148,7 @@ input[type="checkbox"] {
     display: inline-block;
     background-color: #ffffff;
     transition: 0.3s ease;
-    background-color: #007a3f;
+    background-color: #00357a;
     color: white;
     border-radius: 3px;
   }

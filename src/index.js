@@ -11,6 +11,7 @@ import Login from './Login/Login';
 import Daftar from './Daftar/Daftar';
 import Sidebar from './Sidebar/Sidebar';
 import Program from './Program/Program';
+import MobileDev from './Class/MobileDev/MobileDev';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,22 @@ const router = createBrowserRouter([
   },
   {
     path: "Program",
+    element: <Program />
+  },
+  {
+    path: "class/mobiledev",
+    element: <MobileDev />
+  },
+  {
+    path: "class/webdev",
+    element: <Program />
+  },
+  {
+    path: "class/qaengineer",
+    element: <Program />
+  },
+  {
+    path: "class/softwareengineer",
     element: <Program />
   },
 ])

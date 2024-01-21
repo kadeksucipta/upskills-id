@@ -1,7 +1,7 @@
 import React from "react";
-import hero from "../asset/hero2.png";
+import hero from "../asset/MODEL WEB1.png";
 import part from "../asset/partnet2.png";
-import talent2 from "../asset/feature.png";
+import talent2 from "../asset/MODEL WEB 2.png";
 import "./Landing.css";
 import Footer from "../Footer/Footer";
 import Navbar2 from "../Navbar2/Navbar2";
@@ -113,7 +113,7 @@ const Landing = () => {
               </div>
               <div className="parent-benefit-1">
                 <p className="benefit-1">
-                  <FontAwesomeIcon className="icon-benefit" icon={faCheck} /> Curidivum Vitae dan
+                  <FontAwesomeIcon className="icon-benefit" icon={faCheck} /> Curiculum Vitae dan
                   Portofolio
                 </p>
               </div>

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #007a3f;
+  background-color: #00357a;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -18,11 +18,11 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 0;
   transition: 850ms;
 }
 .nav-menu.active {
-  left: 0;
+  left: -100%;
   transition: 350ms;
 }
 .nav-text {
@@ -45,7 +45,7 @@
   border-radius: 4px;
 }
 .nav-text a:hover {
-  background-color: #007a3f;
+  background-color: #00357a;
 }
 .nav-menu-items {
   width: 100%;
@@ -55,7 +55,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .navbar-toggle {
-  background-color: #007a3f;
+  background-color: #00357a;
   width: 100%;
   height: 80px;
   display: flex;
@@ -83,7 +83,7 @@
 }
 .isi-sidebar {
   display: flex;
-  /* justify-content: center; */
+  justify-content: baseline;
   color: white;
   margin-left: 35px;
   cursor: pointer;
@@ -139,4 +139,9 @@
   background: rgb(241, 241, 241);
   margin-right: 20px;
   border-radius: 0 10px 10px 0;
+}
+.programe-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }

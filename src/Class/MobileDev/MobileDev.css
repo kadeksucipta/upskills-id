@@ -1,0 +1,14 @@
+.container-class {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+.head-card-mdev {
+    display: flex;
+    place-items: center;
+}
+.card-mdev {
+    background-color: red;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}

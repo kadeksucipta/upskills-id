@@ -1,7 +1,14 @@
 import {
   faBars,
+  faGlobe,
   faHouse,
+  faMagnifyingGlass,
+  faMobile,
+  faMobileAlt,
   faRemove,
+  faSearch,
+  faSignal,
+  faTrafficLight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
@@ -9,7 +16,7 @@ import { IconContext } from "react-icons";
 import { useNavigate } from "react-router-dom";
 import "./Sidebar.css";
 import { useDispatch } from "react-redux";
-import { faAndroid, faAppStoreIos, faApple, faGolang, faLaravel, faNode, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faAndroid, faAppStore, faAppStoreIos, faApple, faGolang, faLaravel, faNode, faNodeJs, faReact, faWeebly } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -19,19 +26,19 @@ const Sidebar = () => {
   const navigate = useNavigate()
 
   const goToHome = () => {
-    navigate("/Home")
+    navigate("/")
   }
-  const goToKedokteran = () => {
-    navigate("/Kedokteran")
+  const goToMobileDev = () => {
+    navigate("/class/mobiledev")
   }
-  const goToMasukPtn = () => {
-    navigate("/MasukPtn")
+  const goToWebDev = () => {
+    navigate("/class/webdev")
   }
-  const goToTeacher = () => {
-    navigate("/Teacher")
+  const goToQa= () => {
+    navigate("/class/qaengineer")
   }
-  const goToAlumni = () => {
-    navigate("/Alumni")
+  const goToSoftware = () => {
+    navigate("/class/softwareengineer")
   }
 
   return (
@@ -54,31 +61,31 @@ const Sidebar = () => {
             </li>
             <div className="parent-isi1" onClick={() => goToHome()}>
               <h4 className="isi-sidebar">
-                <FontAwesomeIcon className="icon-kelas" icon={faHouse} />Beranda
+                <FontAwesomeIcon className="icon-kelas" icon={faHouse} /><span className="program-name">Beranda</span>
               </h4>
             </div>
 
-            <div className="parent-isi2" onClick={() => goToKedokteran()}>
+            <div className="parent-isi2" onClick={() => goToMobileDev()}>
               <h4 className="isi-sidebar">
-                <FontAwesomeIcon className="icon-kelas" icon={faAndroid} />Android Developer
+                <FontAwesomeIcon className="icon-kelas" icon={faMobileAlt} /><span className="program-name">Mobile Developer</span>
               </h4>
             </div>
 
-            <div className="parent-isi3" onClick={() => goToMasukPtn()}>
+            <div className="parent-isi3" onClick={() => goToWebDev()}>
               <h4 className="isi-sidebar">
-                <FontAwesomeIcon className="icon-kelas" icon={faReact} />React Developer
+                <FontAwesomeIcon className="icon-kelas" icon={faGlobe} /><span className="program-name">Web Developer</span>
               </h4>
             </div>
 
-            <div className="parent-isi4" onClick={() => goToTeacher()}>
+            <div className="parent-isi4" onClick={() => goToQa()}>
               <h4 className="isi-sidebar">
-                <FontAwesomeIcon className="icon-kelas" icon={faLaravel} />Laravel Developer
+                <FontAwesomeIcon className="icon-kelas" icon={faSearch} /><span className="program-name">QA Engineer</span>
               </h4>
             </div>
 
-            <div className="parent-isi5" onClick={() => goToAlumni()}>
+            <div className="parent-isi5" onClick={() => goToSoftware()}>
               <h4 className="isi-sidebar">
-                <FontAwesomeIcon className="icon-kelas" icon={faAppStoreIos} />Ios Developer
+                <FontAwesomeIcon className="icon-kelas" icon={faAndroid} /><span className="program-name">Software Engineer</span>
               </h4>
             </div>
           </ul>

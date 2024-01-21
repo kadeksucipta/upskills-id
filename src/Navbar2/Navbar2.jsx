@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar2.css";
-import logoapa from "../asset/APA2.png"
+import logoapa from "../asset/UPSKILLS.png"
 import { useNavigate } from "react-router-dom";
 
 export default function App() {

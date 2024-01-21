@@ -6,7 +6,7 @@ body {
   margin-top: 50px;
 }
 .apa-logo {
-  width: 40%;
+  width: 20%;
   margin-bottom: 50px;
 }
 .container-login {
@@ -79,7 +79,7 @@ body {
 .btn-regist {
   margin-top: 40px;
   width: 100%;
-  background: #007a3f;
+  background: #00357a;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -132,7 +132,7 @@ body {
 .masuk-akun {
   font-weight: bold;
   font-weight: 500;
-  color: #007a3f;
+  color: #00357a;
   cursor: pointer;
 }
 .masuk-akun:hover {
